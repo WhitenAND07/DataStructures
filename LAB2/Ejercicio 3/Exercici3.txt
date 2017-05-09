@@ -1,0 +1,16 @@
+﻿******************************************************************
+Jordi Blanco Lopez y Jesus Fernandez Cid de Rivera
+Unversitat de Lleida -- Estructura de Dades
+******************************************************************
+
+public static <T> copy (List <? X T> dst, List <? Y T> origen){
+	for (int i = 0; i < origen.size(); i++)
+	dst.set(i, origen.get(i)); //substitueix dst(i) per origen(i)
+}
+
+
+
+// Se usara <? super T> en la X para poder escribir en la lista dst ya que la consideramos una sublista de la lista origen.
+
+// Se usara <? extends T> en la Y para poder leer en la lista origen ya que la consideramos una superlista de la lista dst.
+
